@@ -1,0 +1,23 @@
+form {
+    border-color:#354f52;
+    border-style:double;
+    border-width: 6px;
+    border-radius: 2em;
+    max-width: 600px;
+    margin-top: 30px;
+    display:flex;
+    flex-direction: column;
+}
+
+label {
+    display:flex;
+    flex-wrap:wrap;
+    padding:10px;
+}
+
+h3 {
+    display:flex;
+    justify-content:center;
+    color:#354f52;
+    font-size:36px;
+}

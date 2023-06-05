@@ -1,0 +1,99 @@
+.navBar {
+    display: flex;
+    width: 100vw;
+    margin-top:0;
+    height: 70px;
+    background-color: #52796f;
+    color: white;
+    font-size: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBar nav ul li{
+    display: inline;
+    margin: 2.0vw;
+    color: white;
+}
+
+.NavBar nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navBar nav ul li a:hover {
+    border-bottom: 3px solid tomato;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.navBar .navMobile {
+    display: flex;
+}
+
+.hamburger {
+    position: absolute;
+    display: flex;
+    color: white;
+    right: 5%;
+}
+
+.closer {
+    position: absolute;
+    display: flex;
+    color: white;
+    right: 5%;
+ 
+}
+
+
+@media (max-width: 600px) {
+    .navBar .nav {
+        display: none;
+    }
+
+    .navBar .navMobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .navBar .navMobile .hamburger {
+        position: absolute;
+        right: 5%;
+    }
+
+    .navBar nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 70px;
+        background-color:#52796f;
+        width: 100%;
+        border-top: 3px solid tomato;
+        right: 0;
+        margin-top: 0;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .navBar nav ul li {
+        display: flex;
+        font-size: 30px;
+    }
+
+    .navBar nav ul li a:hover {
+        color: tomato;
+        border-bottom: none;
+    }
+}
+
+
+
+

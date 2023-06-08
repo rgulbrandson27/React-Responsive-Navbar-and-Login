@@ -1,3 +1,4 @@
+
 .navBar {
     display: flex;
     width: 100vw;
@@ -11,7 +12,14 @@
     justify-content: center;
 }
 
-.navBar nav ul li{
+#logo {
+    display: flex;
+    float: left;
+    color:tomato;
+    justify-self: start;
+}
+
+.navBar nav ul li {
     display: inline;
     margin: 2.0vw;
     color: white;
@@ -25,6 +33,7 @@
 
 .navBar nav ul li a:hover {
     border-bottom: 3px solid tomato;
+    transition-duration: 03.s;
 }
 
 a {
@@ -42,6 +51,7 @@ a {
     display: flex;
     color: white;
     right: 5%;
+    display: none;
 }
 
 .closer {
@@ -49,7 +59,7 @@ a {
     display: flex;
     color: white;
     right: 5%;
- 
+    display: none;
 }
 
 
@@ -66,6 +76,15 @@ a {
     .navBar .navMobile .hamburger {
         position: absolute;
         right: 5%;
+        font-size: 40px;
+        display: flex;
+    }
+
+    .navBar .navMobile .closer {
+        position: absolute;
+        display: flex;
+        right: 5%;
+        font-size: 34px;
     }
 
     .navBar nav ul {
@@ -81,16 +100,21 @@ a {
         margin-top: 0;
         padding-top: 25px;
         padding-bottom: 25px;
+        opacity: 92%;
     }
 
     .navBar nav ul li {
         display: flex;
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .navBar nav ul li a:hover {
         color: tomato;
+        opacity: 100%;
         border-bottom: none;
+        font-size: 32px;
+        font-weight: 300px;
+        transition-duration: 0.3s;
     }
 }
 

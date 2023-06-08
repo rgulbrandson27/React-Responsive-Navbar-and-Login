@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import './LoginForm.css';
 
 export default function LoginForm() {
   const [email, setEmail] = useState('');
@@ -6,6 +7,7 @@ export default function LoginForm() {
   const handleClick = () => {}
 
   return (
+    <div className="form-center">
     <form onSubmit={ ()=> {
       alert('Submitted')
     }}>
@@ -19,5 +21,6 @@ export default function LoginForm() {
         setPassword(event.target.value)}} type="password" placeholder="**********" id="password" name="password" />
       <button>Submit</button>
     </form>
+    </div>
   )
 }

@@ -1,9 +1,10 @@
 import './NavBar.css'
 
-const NavLinks = () => {
+
+const NavLinks = (props) => {
     return (
         <ul>
-            <li>
+            <li onClick={() => props.isMobile && props.closeMobileMenu()}>
                 <a href="#" className="nav-link">Home</a>
             </li>
             <li>

@@ -23,8 +23,5 @@ const NavLinks = (props) => {
     );
 }
 
-/* <li class="nav-item">
-<a href="#" className="nav-link">Home</a>
-</li> */
 
 export default NavLinks;
